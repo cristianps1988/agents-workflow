@@ -1,0 +1,43 @@
+# Claude Code Settings
+.claude/settings.local.json
+
+# Session contexts (optional - you may want to commit these for team collaboration)
+# .claude/tasks/context_session_*.md
+
+# Plans (optional - you may want to commit these)
+# .claude/plans/*.md
+
+# Reports (optional - you may want to commit these)
+# .claude/reports/*.md
+
+# Project documentation (you should commit PROJECT.md, this is just an example ignore)
+# PROJECT.md
+
+# Environment variables
+.env.local
+.env*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies (if you add a package.json later)
+node_modules/
+
+# Build outputs (if you add build scripts)
+dist/
+build/

@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "_comment": "Define MCP (Model Context Protocol) servers available to AI agents",
+    "_usage": "Add your project-specific MCP servers here. Enable/disable per session in .claude/settings.local.json",
+    "_example_shadcn": {
+      "command": "npx",
+      "args": ["shadcn@latest", "mcp"],
+      "_description": "UI component library - ~4.7k tokens",
+      "_use_for": "UI development, component planning"
+    },
+    "_example_playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "_description": "Browser automation - ~14k tokens",
+      "_use_for": "UI/UX audits, accessibility testing"
+    },
+    "_instructions": [
+      "1. Replace example entries with your actual MCP servers",
+      "2. Remove entries starting with '_' (these are comments/examples)",
+      "3. Add only servers relevant to your project",
+      "4. Consider token cost per server (shown in descriptions)",
+      "5. Enable/disable servers per session in .claude/settings.local.json"
+    ],
+    "_token_optimization_strategy": [
+      "UI work: Enable UI-related MCPs only (e.g., shadcn)",
+      "Database work: Enable database MCPs only",
+      "UX audits: Enable UI + browser automation (e.g., shadcn + playwright)",
+      "Don't enable all servers simultaneously - wastes tokens"
+    ]
+  }
+}
